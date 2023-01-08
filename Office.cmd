@@ -45,7 +45,7 @@ $Configuration | Set-Content "Configuration.xml"
 }
 Start-Process -FilePath "notepad.exe" -Wait  -ArgumentList "Configuration.xml"
 if (!(Test-Path "setup.exe")) {
-(New-Object Net.WebClient).DownloadFile("https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_15629-20208.exe", "ODT.exe")
+(New-Object Net.WebClient).DownloadFile("https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_15726-20202.exe", "ODT.exe")
 Start-Process -FilePath ".\ODT.exe" -Wait -NoNewWindow -ArgumentList "/extract:.", "/quiet"
 }
 
